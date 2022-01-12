@@ -12,6 +12,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 0;
 }
 .navbar__logo {
   margin-right: auto;
@@ -30,6 +31,9 @@ header {
   height: 3em;
   text-align: center;
   line-height: 1em;
+}
+.content {
+  margin: 0 2em;
 }
 .content__button {
   border: 2px solid red;
@@ -54,5 +58,15 @@ header {
   float: right;
 }
 .content__title {
-  width: 50em;
+  font-size: 3em;
+}
+.content__flex {
+  display: flex;
+  justify-content: space-around;
+}
+.content__flex__image {
+  border-radius: 50px;
+  width: 25em;
+  height: 30em;
+  object-fit: cover;
 }
