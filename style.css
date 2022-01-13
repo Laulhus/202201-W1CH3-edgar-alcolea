@@ -33,6 +33,10 @@ header {
   line-height: 1em;
   cursor: pointer;
 }
+.navbar__mobile {
+  width: 2em;
+  visibility: hidden;
+}
 .navbar__button:hover {
   background-color: #ed6436;
   color: #fff;
@@ -121,7 +125,18 @@ h5 {
   transition: 0.3s;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
+  .navbar h4 {
+    visibility: hidden;
+  }
+  .navbar__button {
+    visibility: hidden;
+  }
+  .navbar__mobile {
+    width: 2em;
+    visibility: visible;
+    padding: 1px;
+  }
   .content {
     display: flex;
     flex-direction: column;
