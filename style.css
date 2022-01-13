@@ -70,3 +70,34 @@ header {
   height: 30em;
   object-fit: cover;
 }
+@media only screen and (max-width: 800px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  .content__title,
+  .content__button {
+    display: block;
+  }
+  .content__button {
+    color: #fff;
+    background-color: #ed6436;
+  }
+
+  .content__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .content__flex__image {
+    border-radius: 50px;
+    width: 35em;
+    height: 20em;
+    object-fit: cover;
+    padding: 20px;
+  }
+}
