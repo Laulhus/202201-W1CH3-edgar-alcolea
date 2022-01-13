@@ -57,6 +57,7 @@ header {
 }
 .content__activities {
   color: #ed6436;
+  padding-top: 1em;
 }
 .content__title,
 .content__button {
@@ -74,12 +75,52 @@ header {
   display: flex;
   justify-content: space-around;
 }
+.content__img {
+  position: relative;
+}
+.content__img h4,
+h5 {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 20px 0;
+  visibility: hidden;
+}
+.content__img h4 {
+  margin-top: 230px;
+  font-size: 27px;
+}
+.content__img h5 {
+  margin-top: 180px;
+  font-size: 18px;
+}
+.content__img:hover h4 {
+  visibility: visible;
+  transition: 0.3s;
+}
+.content__img:hover h5 {
+  visibility: visible;
+  transition: 0.3s;
+}
 .content__flex__image {
   border-radius: 50px;
   width: 25em;
   height: 30em;
   object-fit: cover;
+  position: relative;
 }
+.content__flex__image:hover {
+  filter: brightness(50%);
+  transition: 0.3s;
+}
+
 @media only screen and (max-width: 800px) {
   .content {
     display: flex;
@@ -109,5 +150,20 @@ header {
     height: 20em;
     object-fit: cover;
     padding: 20px;
+  }
+  .content__img h4,
+  h5 {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 70px;
+    right: 0;
+    padding: 20px 0;
+    visibility: hidden;
   }
 }
