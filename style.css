@@ -71,7 +71,7 @@ header {
   object-fit: cover;
 }
 @media only screen and (max-width: 800px) {
-  .content{
+  .content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,13 +79,13 @@ header {
     height: 100vh;
   }
   .content__title,
-.content__button {
-  display: block;
-}
   .content__button {
-  color: #fff;
-  background-color: #ed6436;
-}
+    display: block;
+  }
+  .content__button {
+    color: #fff;
+    background-color: #ed6436;
+  }
 
   .content__flex {
     display: flex;
@@ -94,9 +94,10 @@ header {
     justify-content: space-evenly;
   }
   .content__flex__image {
-  border-radius: 50px;
-  width: 35em;
-  height:20em;
-  object-fit: cover;
-  padding: 20px;
+    border-radius: 50px;
+    width: 35em;
+    height: 20em;
+    object-fit: cover;
+    padding: 20px;
+  }
 }
