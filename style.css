@@ -33,6 +33,9 @@ header {
   line-height: 1em;
   cursor: pointer;
 }
+.navbar__dropdown:hover {
+  color: #ed6436;
+}
 .navbar__mobile {
   width: 2em;
   visibility: hidden;
@@ -100,10 +103,12 @@ h5 {
 .content__img h4 {
   margin-top: 230px;
   font-size: 27px;
+  pointer-events: none;
 }
 .content__img h5 {
   margin-top: 180px;
   font-size: 18px;
+  pointer-events: none;
 }
 .content__img:hover h4 {
   visibility: visible;
